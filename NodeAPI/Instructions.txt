@@ -1,0 +1,19 @@
+Initialize an nmp package
+    : npm init
+
+To install external features use:
+    For production : npm i {package-name}      eg. express
+    For dev dependency : npm i {package-name} -D       eg. body-parser
+
+Useful features:
+ - nodemon
+ - express
+
+ Version:
+ "1.0.0" -> Major.Minor.Patch
+
+ Major: major changes and big updates with new functionality
+ Minor: minor changes and updates to functionality/design
+ Patch: error/bug fixes
+
+ 

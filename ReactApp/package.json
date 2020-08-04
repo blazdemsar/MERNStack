@@ -1,0 +1,44 @@
+{
+  "name": "reactapp",
+  "version": "1.0.0",
+  "description": "React Car Application Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build",
+    "build": "webpack -p && copy src\\index.html dist\\index.html && webpack-dev-server",
+    "build-mac": "webpack -p && cp src/index.html dist/index.html && webpack-dev-server"
+  },
+  "keywords": [
+    "react",
+    "javascript",
+    "mongoDB",
+    "redux"
+  ],
+  "author": "Blaz Demsar",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "css-loader": "3.6.0",
+    "style-loader": "1.2.1",
+    "uglifyjs-webpack-plugin": "2.2.0",
+    "webpack": "4.43.0",
+    "webpack-cli": "3.3.12",
+    "webpack-dev-server": "3.11.0"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "redux-promise-middleware": "^6.1.2",
+    "redux-thunk": "^2.3.0",
+    "serialize-javascript": "^4.0.0"
+  }
+}
